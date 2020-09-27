@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-registrer.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="cuerpo">
+    <form>
+        <h1>Registro de usuario</h1>    
+        <div class="regitro">
+                <div class="registro-formulario">
+                <p>
+                <label class="input-contenedor" for="">Nombre:</label>
+                <input type="text" placeholder="Ej: Carlos Alexis">
+                </p>
+                <p>
+                <label class="input-contenedor" for="">Apellido:</label>
+                <input type="text" placeholder="Ej: Cantera Neves">
+                </p>
+                <p>
+                    <label class="input-contenedor" for="">Genero</label><br>
+                    <input type="radio" name="genero" value="hombre">Hombre<br>
+                    <input type="radio" name="genero" value="mujer">Mujer<br>
+                    <input type="radio" name="genero" value="sinespecificar">Sin especificar
+                </p>
+                <p>
+                <label class="input-contenedor" for="">Pais de origen:</label>
+                <select class="input-contenedor" name="paisdeorigen">
+                    <option>Argentina</option>
+                    <option>Brasil</option>
+                    <option>Uruguay</option>
+                    </select>
+                </p>
+                <p>
+                <label class="input-contenedor" for="">Numero de contacto:</label>
+                <input type="tel" placeholder="Ej: 4554-XXXX">
+                </p>
+                <p>
+                <label class="input-contenedor" for="">E-mail:</label>
+                <input type="email" placeholder="Ej: HackingLab@gmail.com">
+                </p>
+                <p>
+                    <label class="input-contenedor" for="">Contraseña:</label>
+                    <input type="password" placeholder="">
+                </p>
+                <p>
+                    <label class="input-contenedor" for="">Repita contraseña</label>
+                    <input type="password" placeholder="">
+                </p>
+                <p>
+                    <input class="input-contenedor" type="checkbox">Al registrarse, acepta nuestras condiciones de uso y politicas de privacidad.
+                </p>
+                <p>
+                    ¿Ya tienes cuenta?<a class="link" href="../css/sesion.html"> Iniciar sesion</a>
+                </p>
+            <button type="reset">Borrar</button>
+            <button type="submit">Registrarse</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

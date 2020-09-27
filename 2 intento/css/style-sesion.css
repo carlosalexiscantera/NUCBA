@@ -1,0 +1,98 @@
+body{
+    background-image: url(../este-si.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+ }
+
+
+
+ .cuerpo{
+      
+    background: white;
+    margin-top: 300px;
+    padding: 3px;
+    opacity: 85%;
+    font-family: 'Archivo', sans-serif;
+    height: 255px;
+    }
+
+    
+
+.inicio-sesion{
+    width: 100%;
+    padding: 15px;
+    margin-top: -20px;
+    
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 80px;
+
+}
+
+input [type="text"], input [type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+
+}
+ 
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    color: #rgb(220, 235, 250);
+
+ 
+}
+
+
+
+button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: cadetblue ;
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: -10px;
+    text-decoration: none;
+
+ }
+
+ button:hover{
+    background: cadetblue;
+ }
+
+ .inicio-sesion-panel{
+    width: 100%;
+    padding: 30px;
+    background: rgb(220, 235, 250);
+    margin-top: -210px;
+
+ }
+
+ .registro-formulario h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ @media(min-width:768px){
+
+    .inicio-sesion{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+
+    }
+}

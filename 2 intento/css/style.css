@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;  /*esconde la linea de los linkeables*/
+
+}
+
+html {
+    margin: 0;
+}
+
+body{
+    background: url(../ahorasi2.jpg!d);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: whitesmoke;
+    box-shadow: 0 4px 25px -22px gray;
+    z-index: 2;
+    background: url(../Fondo-pag.jpg);
+    flex: 0 0 auto;
+    
+
+}
+
+.header-content{
+    
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.logo{
+
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    user-select: none;
+}
+
+.logo .Primera-parte{
+
+    text-shadow: -1px -1px 1px  rgb(93, 196, 161);
+    font-family: 'Zilla Slab Highlight', cursive;
+    
+}
+
+.logo h1 b{
+
+    color: rgb(21, 190, 134);
+    font-family: 'Zilla Slab Highlight', cursive;
+
+}
+
+.menu{
+
+    height: 80px;
+
+}
+
+.menu nav{
+
+    height: 100%;
+}
+
+.menu nav ul{
+
+    height: 100%;
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    
+    font-family: 'Archivo', sans-serif;
+
+
+
+}
+
+.link-menu{
+
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-selected:before{
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: rgb(21, 190, 134);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+
+}
+
+.menu nav ul li a:hover{
+    color: goldenrod;
+    transition: color 300ms;
+
+}
+
+
+/* portada  */
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    background-image: url(../portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:  rgb(7, 61, 14);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+}
+
+.container-info-cover{
+
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container-info-cover h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 3px 3px 2px black;
+
+
+}
+
+
+.container-info-cover p{
+
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 3px 3px 2px black;
+
+}
+
+/*Contenedor del contenido de la pagina*/
+/*Contenedor de las imagenes de la pagina*/
+
+.container-content{
+    width: 1850px;
+    margin: auto;
+    margin-top: 150px;
+
+
+}
+
+.container-content-img{
+
+    width: 500px;
+    padding: 20px;
+    padding-bottom: 60px;
+    box-shadow: -10px 0 20px -30px  black;
+    border-radius: 6px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+
+}
+
+.container-img{
+
+    width: 450px;
+    padding: 20px;
+    margin-left: -50px;
+    margin-top: -25px;
+    
+
+}
+
+.container-content-img:before{
+
+    content: '';
+    width: 400px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  rgb(7, 61, 14);
+    overflow: hidden;
+
+}
+
+/*Contenedor del texto de la pagina*/
+
+.container-content-texto{
+    float: left;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+
+}
+
+article{
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+article::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  rgb(7, 61, 14);
+    overflow: hidden;
+}
+
+.container-titulo{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+}
+
+.container-texto{
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px
+}
+
+
+.container-texto button{
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 5px 25px;
+    font-size: 16px;
+    background: rgb(21, 190, 134);
+    border: none;
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+
+
+}
+
+.container-texto button:hover{
+    color: goldenrod;
+    transition: color 300ms;
+    opacity: 0.9;
+}
+
+.section-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-formulario-fondo{
+/*     margin-top: 900px; 
+    margin-left: 700px; */
+    width: 600px;
+    height: 800px;
+    padding: 0px 0px;
+    background-image: url(../fondo-formulario.jpg);
+    border-radius: 7%;
+    opacity: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-formulario{
+ /*    margin-top: -1500px;
+    width: 450px;
+    height: 700px;
+    margin: 50px 80px;
+    padding: 100px 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: border-box;
+   /*  position: absolute; */
+    background: black;
+    opacity: 80%;
+    border-radius: 7%;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+label{
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: white;
+}
+
+#boton2{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: cadetblue ;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+#footer-texto{
+
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    padding: 100px 100px;
+    margin-top: 0px;
+    margin-left: 0px;
+
+
+}
+
+#footer{
+    width: 100%;
+    height: 0px;
+    margin: 50px 0 0 0;
+    padding: 100px 100px;
+    background-image: url(../formulario.jpg);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    position: relative;
+
+}
+
+.span {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 600px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+.texto-footer-contacto{
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: -85px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+.texto-footer-descripcion{
+    grid-column: 3/4;
+    width: 300px;
+    height: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: -200px;
+    margin-top: -85px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+ .texto-footer-logo{
+    grid-column: 5/6;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-left: -170px;
+ }
+
+ .footer-logo{
+
+    text-shadow: -1px -1px 1px  rgb(93, 196, 161);
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 30px;
+    margin-top: -30px;
+ }
+
+ .footer-logo-2{
+    color: rgb(21, 190, 134);
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 25px;
+ }
+
+ #icon-menu{
+     width: 50px;
+     height: 50px;
+     margin: 0px;
+     position: absolute;
+     right: 20px;
+     top: 16px;
+     color: #787878;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     border-radius: 100%;
+     display: none;
+     
+}
+
+ #icon-menu:hover{
+     background:  rgb(93, 196, 161);
+     opacity: 85%;
+ }
+
+ /* responsive desing - adaptable a dispositivos moviles*/
+
+ @media screen and (max-width: 1220px){
+
+    .header-content,
+    .container-content,
+    .container-cover,
+    .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+
+    }
+
+
+ }
+
+ @media screen and (max-width: 1020px){
+
+        .container-content,
+        .header-content,
+        .container-cover,
+        .container-footer{
+            width: 100%;
+        }
+ }
+
